@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="TP1 da ADS feito pelo aluno mais preguiçoso da sala">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel=stylesheet type="text/css" href="css/tp1.css">
+<script src="js/script.js"></script>
+<title>Trabalho ADS</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div>
+                <ul>
+                    <li><a href="#1ex">Equação de 2°Grau</a></li>
+                    <li><a href="#2ex">Média ponderada</a></li>
+                    <li><a href="#3ex">Ordem Crescente</a></li>
+                    <li><a href="#4ex">Data Cronológica</a></li>
+                    <li><a href="#5ex">Somar e Raiz</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+        <section style="padding-top:10%;">
+            <h1 class="title" id="1ex">Equação de 2°Grau</h1>
+                    <p class="tagline">Coeficiente <b>a</b>: <input type="text" size="5" maxlength="5" name="coefA" /><br /><br />
+                    Coeficiente <b>b</b>: <input type="text" size="5" maxlength="5" name="coefB" /><br /><br />
+                    Coeficiente <b>c</b>: <input type="text" size="5" maxlength="5" name="coefC" /><br /><br /></p>
+              
+                    <input type="submit" value="Calcular" onclick="Calcular()" style="border: outset 1px #122561" onmouseover="style.color = '#CC1111'" onmouseout="style.color = ''"/><br /><br /><br /><br />
+					<p class="tagline">Valor de <b>&Delta;</b>: <p id="delta"></p><br /><br />
+                    Valor de <b>x<sub>1</sub></b>: <p id="x1"></p><br /><br />
+                    Valor de <b>x<sub>2</sub></b>: <p id="x2"></p><br /><br /><br>             
+                    <hr>
+        </section>
+        <section style="padding-top:10%;"">
+		  <h1 class="title" id="2ex">Média ponderada</h1>
+			Nota Trabalho Prático <input type="text" size="5" name="notaA" id="notaA"><br>
+			Nota Avaliação Semestral <input type="text" size="5" name="notaB" id="notaB"><br>
+			Nota Exame Final <input type="text" size="5" name="notaC" id="notaC"><br>
+			<input type="submit" onclick="Media()" value="Calcular">
+            <p class="tagline" id="total"></p>
+            <hr>
+        </section>
+        <section style="padding-top:10%;">
+		  <h1 class="title" id="3ex">Ordem Crescente</h1>
+			1º Número<input type="text" size="5" name="numa" id="numa"><br>
+			2º Número <input type="text" size="5" name="numb" id="numb"><br>
+			3º Número <input type="text" size="5" name="numc" id="numc"><br>
+			<input type="submit" onClick="ordem()" value="Ordenar">
+            <p class="tagline" id= "cre"></p>
+            <hr>
+        </section>
+        <section style="padding-top:10%;">
+		  <h1 class="title" id="4ex">Data Cronológica</h1>
+            1ºdia <input type="date" id="data1"><br>
+            2º dia <input type="date" id="data2"><br>
+			<input type="submit" value="Ordenar" onclick="dt()">
+
+                <p class="tagline" id="data"></p>
+        </section>
+        <section style="padding-top:10%;">
+            <h1 class="title" id="5ex">Menu de Opções</h1>
+                <input type="radio" name="operacao" value="SOMA" onchange="changeOperation(this)" > Soma<br>
+                <input type="radio" name="operacao" value="RAIZ" onchange="changeOperation(this)"> Raiz<br>
+                <p id="lbdRAIZ" style="display:none;">Digite um Número</p><input type="text" style="display:none;" id="EntradaRAIZ">
+                <p id="lbdSOMAR1" style="display:none;"> Digite um Número</p> <input type="text" style="display:none;" id="EntradaSOMAR1" >
+                <p id="lbdSOMAR2" style="display:none;"> Digite outro Número</p> <input type="text" style="display:none;" id="EntradaSOMAR2"><br>
+                <input type="submit" value="Calcular" onclick="menu()">
+                <p id="rdbRes"></p>
+        </section>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copy"> 2019 &copy; - Todos os direitos reservados<br/>
+        Desenvolvido por Yohran Stipanich</p>
+    </footer>
+    
+</body>
+</html>

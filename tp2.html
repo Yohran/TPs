@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/tp2.css">
+    <title>TP2</title>
+</head>
+<body>
+    <header class="head">
+        <nav class="menu">
+            <div class="menu-div">
+                <ul>
+                    <li class="mn-1"><a href="#1">Salário</a></li>
+                    <li class="mn"><a href="#2">Primo</a></li>
+                    <li class="mn"><a href="#3">Fibonacci</a></li>
+                    <li class="mn"><a href="#4">Vinhos</a></li>
+                    <li class="mn"><a href="#5">Fatorial</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class=" container">
+        <h1 class="intro">Atividade TP2</h1>
+        <section class="sec">
+            <div>
+                <h1 class="title" id="1">Salário</h1>
+            </div>
+            <div>
+                <input type="button" value="Calcular" onclick="sal()" class="btn">
+                <p id="sal" class="tagline"></p>
+            </div>
+        </section>
+        <section class="sec">
+            <div>
+                <h1 class="title" id="2">Números Primos</h1>
+            </div>
+            <div>
+                <p class="tagline">Entre com um número pra verificar se é primo ou não</p><br>
+                <p class="tagline">Digite o número: <input type="text" id="pri" class="inp"></p><br>
+                <input type="button" value="Verificar" onclick="primo()" class="btn">
+                <p id="prim" class="tagline"></p>
+            </div>
+        </section>
+        <section class="sec">
+            <div>
+                <h1 class="title" id="3">Fibonacci</h1>
+            </div>
+            <div>
+                <p class="tagline">Digite um número até onde deseja que calcule por Fibonacci</p><br>
+                <p class="tagline">Digite o número: <input type="text" id="fibo" class="inp"></p><br>
+                <input type="button" value="Verificar" onclick="fibo()" class="btn"><br>
+                <p id="fibonacci" class="tagline"></p> 
+            </div>
+        </section>
+        <section class="sec">
+            <div>
+                <h1 class="title" id="4">Vinhos</h1>
+            </div>
+            <div>
+                <input type="button" value="Verificar" onclick="vinho()" class="btn">
+                <p id="vinho" class="tagline"></p>
+            </div>
+        </section>
+        <section class="sec">
+            <div>
+                <h1 class="title" id="5">Fatorial</h1>
+            </div>
+            <div>
+                <p class="tagline">Digite um número que deseja fatorar</p><br>
+                <p class="tagline">Digite o número: <input type="text" id="fat" class="inp"></p><br>
+                <input type="button" value="Fatorar" onclick="fator()" class="btn"><br>
+                <p id="fatorial" class="tagline"></p>
+            </div>
+        </section>
+        <br>
+        <br>
+    </main>
+    <footer class="footer">
+        <h1 class="text-footer">Atividade TP2</h1> <br> <br>
+        <p class="tagline">Todos os direitos a Yohran Stipanich e FATEC Praia Grande     - 2019 &copy;</p>
+    </footer>
+</body>
+</html>
